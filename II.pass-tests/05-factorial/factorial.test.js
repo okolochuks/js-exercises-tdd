@@ -1,32 +1,32 @@
-var factorial = require('./factorial');
+var factorial = require("./factorial");
 
-describe('Factorial', function () {
-    test('Factorial', function () {
-        var in1 = 5;
-        var exp1 = 120;
+describe("Factorial", function() {
+  test("Factorial", function() {
+    var in1 = 5;
+    var result1 = 120;
 
-        var in2 = 9;
-        var exp2 = 362880;
+    var in2 = 9;
+    var result2 = 362880;
 
-        var in3 = 1;
-        var exp3 = 1;
+    var in3 = 1;
+    var result3 = 1;
 
-        var in4 = 0;
-        var exp4 = 1;
+    var in4 = 0;
+    var result4 = 1;
 
-        var in5 = 3;
-        var exp5 = 6;
+    var in5 = 3;
+    var result5 = 6;
 
-        var out1 = factorial(in1);
-        var out2 = factorial(in2);
-        var out3 = factorial(in3);
-        var out4 = factorial(in4);
-        var out5 = factorial(in5);
+    var result1 = factorial(in1);
+    var result2 = factorial(in2);
+    var result3 = factorial(in3);
+    var result4 = factorial(in4);
+    var result5 = factorial(in5);
 
-        expect(out1).toEqual(exp1);
-        expect(out2).toEqual(exp2);
-        expect(out3).toEqual(exp3);
-        expect(out4).toEqual(exp4);
-        expect(out5).toEqual(exp5);
-    });
-})
+    expect(result1).toEqual(factorial(in1));
+    expect(result2).toEqual(factorial(in2));
+    expect(result3).toEqual(factorial(in3));
+    expect(result4).toEqual(factorial(in4));
+    expect(result5).toEqual(factorial(in5));
+  });
+});
